@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <style>
+        /* Estilos personalizados */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        
+            grid-gap: 10px;
+            margin: 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 530px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            text-align: center;
+        }
+
+        
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/1.JPG" alt="Foto 1">
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/2.jpg" alt="Foto 2">
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/3.jpg" alt="Foto 3">
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/4.jpg" alt="Foto 4">
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/5.JPG" alt="Foto 5">
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/6.JPG" alt="Foto 6">
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/7.jpg" alt="Foto 7">
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/8.jpg" alt="Foto 8">
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="gallery-item">
+            <img src="/imgs/pessoal_fotos/9.jpg" alt="Foto 9 " >
+            <div class="overlay">
+                <div class="overlay-content">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        document.getElementById("voltar").addEventListener("click", function (event) {
+            event.preventDefault(); // Evita o comportamento padrão do link
+            window.history.back(); // Volta para a página anterior no histórico de navegação
+        });
+
+
+    </script>
+</body>
+
+
+</html>
